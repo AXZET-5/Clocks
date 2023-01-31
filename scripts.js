@@ -3,7 +3,7 @@ console.log(datetime);
 document.getElementById("sgtTime").textContent = datetime; //it will print on html page
 
 function refreshTime() {
-  const timeDisplay = document.getElementById("time");
+  const timeDisplay = document.getElementById("sgtTime");
   const dateString = new Date().toLocaleString();
   const formattedString = dateString.replace(", ", " - ");
   timeDisplay.textContent = formattedString;
