@@ -1,3 +1,9 @@
+.localInformation {
+    background-color: yellow;
+    width: 90%;
+    text-align: center;
+}
+
 .localRegionLabel {
     font-family: Sans-Serif;
     font-size: 24px;
