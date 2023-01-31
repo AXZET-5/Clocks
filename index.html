@@ -2,17 +2,57 @@
 
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/0big.css">
+    <link rel="stylesheet" type="text/css" href="./css/1small.css">
     <meta name="viewport" content="width=device-width">
     <title>ctj-Clocks</title>
     <link rel="icon" type="image/x-icon" href="./images/Website_Icon_32.png">
 </head>
 <body>
-    <div class="localInformation">
-        <p class="localRegionLabel" id="localRegion"></p>
-        <p class="localTimeLabel" id="localTime"></p>
+    <div class="flexContainer">
+        <div class="bigBox flexChild">
+            <br>
+            <p class="localDate smallBox">
+                <strong id="day"></strong>
+                <text>-</text>
+                <strong id="date"></strong>
+                <strong id="month"></strong>
+                <strong id="year"></strong>
+            </p>
+            <p class="localTime">
+                <strong class="smallBox" id="hour"></strong>
+                <strong class="smallBox" id="minute"></strong>
+                <strong class="smallBox" id="second"></strong>
+            </p>
+        </div>
+        <div class="bigBox flexChild">
+            <br>
+            <p class="localDate smallBox">
+                <strong>Singapore Standard Time</strong>
+            </p>
+            <p class="localTime">
+                <strong class="smallBox">UTC</strong>
+                <strong class="smallBox" id="timezone"></strong>
+            </p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="wrapper">
+        <div class="bigBox megaUpgrade" id="mapBox">
+            <img src="./images/Worldmap.png" class="map">
+        </div>
+        <text class="mapPin" id="sg">Singapore</text><br>
+        <text class="mapPin" id="bj">Beijing</text><br>
+        <text class="mapPin" id="tk">Tokyo</text><br>
+        <text class="mapPin" id="sl">Seoul</text><br>
+        <text class="mapPin" id="ld">London</text><br>
+        <text class="mapPin" id="ws">Washington</text><br>
+        <text class="mapPin" id="cb">Canberra</text><br>
     </div>
 
     <script src="scripts.js"></script>
+    <script src="map.js"></script>
 </body>
 </html>
